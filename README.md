@@ -16,7 +16,7 @@ The database is deployed on Supabase.
 
 Supabase project URL:  
 ```
-https://bcweptazyanghinzmasl.supabase.co
+https://supabase.com/dashboard/project/bcweptazyanghinzmasl
 ```
 
 Database access is restricted to authorized roles, and direct PostgreSQL connections are used for administrative operations such as backups.
