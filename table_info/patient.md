@@ -33,7 +33,7 @@ Each patient entry is associated with exactly one user account, enabling role-ba
   Read-only access to their own patient record.
 
 - **Data Entry Staff**:  
-  Create and update patient records.
+  Create and read patient records. Update administrative fields only.
 
 - **Doctors and Laboratory Staff**:  
   Read access for patient identification and medical context.
