@@ -67,11 +67,16 @@ hospital-db-system/
   Scripts for automated logical backups and database recovery using `pg_dump` and `pg_restore`.
 
 - `sql_queries/`  
-  SQL definitions for the roles, and their actions
+  - `sql_queries/`  
+  SQL definitions for the database schema, roles, and access control policies.
   - `doctors/`, `patients/`, `lab_staff/`:  
-    These subfolders contain SQL scripts representing the specific CRUD actions performed by each actor.
-  - **Sequential Execution:** Files are named using a `step_` prefix (e.g., `step_01_...`) to indicate the strict order in which they should run.
-  - **Description:** Each script corresponds to a specific workflow (Create, Read, Update, Delete) and includes a brief description of the operation being performed.
+    These subfolders contain SQL scripts representing the specific CRUD actions performed by each actor. Files are named sequentially (e.g., `step_01_...`) to indicate the strict execution order.
+  - `constraints/`:  
+    Contains database triggers and limitations imposed on actors, such as preventing row deletion, restricting updates to one's own data, and implementing attribute-based access control.
+  - `audit_logs/`:  
+    Scripts for a custom `audit_logging` table that tracks specific user actions, providing a granular log layer in addition to Supabase's native logging.
+  - `policies/`:  
+    Defines the specific Row Level Security (RLS) policies for each actor across the database tables.
 
 - `table_info/`  
   Documentation describing the purpose, structure, and access control of each table.
@@ -79,4 +84,7 @@ hospital-db-system/
 - `diagrams/`  
   Database schema diagrams illustrating table relationships.
 
+---
 
+## Link to the Demo
+[Watch the demonstration video on YouTube](https://www.youtube.com/watch?v=Rhjba1ZvbX0)
