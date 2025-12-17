@@ -65,7 +65,11 @@ hospital-db-system/
   Scripts for automated logical backups and database recovery using `pg_dump` and `pg_restore`.
 
 - `sql_queries/`  
-  SQL definitions for the database schema, roles, and access control policies.
+  SQL definitions for the roles, and their actions
+  - `doctors/`, `patients/`, `lab_staff/`:  
+    These subfolders contain SQL scripts representing the specific CRUD actions performed by each actor.
+  - **Sequential Execution:** Files are named using a `step_` prefix (e.g., `step_01_...`) to indicate the strict order in which they should run.
+  - **Description:** Each script corresponds to a specific workflow (Create, Read, Update, Delete) and includes a brief description of the operation being performed.
 
 - `table_info/`  
   Documentation describing the purpose, structure, and access control of each table.
