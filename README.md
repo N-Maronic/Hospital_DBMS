@@ -48,7 +48,9 @@ hospital-db-system/
 │   ├── backup.sh
 │   └── restore.sh
 ├── sql_queries/
-│   ├── ...
+│   ├── doctors/
+│   ├── patients/
+│   └── lab_staff/
 ├── table_info/
 │   ├── patient.md
 │   ├── appointment.md
