@@ -1,0 +1,4 @@
+# Database backups
+supabase_backups/
+*.dump
+*.dump.gpg
