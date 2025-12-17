@@ -48,8 +48,11 @@ hospital-db-system/
 │   ├── backup.sh
 │   └── restore.sh
 ├── sql_queries/
+|   ├── audit_logs/
+|   ├── constraints/
 │   ├── doctors/
 │   ├── patients/
+|   ├── policies/
 │   └── lab_staff/
 ├── table_info/
 │   ├── patient.md
