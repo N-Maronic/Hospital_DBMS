@@ -71,7 +71,7 @@ hospital-db-system/
 
 - `sql_queries/`  
   - `sql_queries/`  
-  SQL definitions for the database schema, roles, and access control policies.
+  SQL definitions for the database schema, roles, and access control policies. You can paste these queries in the SQL Editor tab of supabase to reproduce the results.
   - `doctors/`, `patients/`, `lab_staff/`:  
     These subfolders contain SQL scripts representing the specific CRUD actions performed by each actor. Files are named sequentially (e.g., `step_01_...`) to indicate the strict execution order.
   - `constraints/`:  
